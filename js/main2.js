@@ -285,9 +285,7 @@ function calcularCostos() {
         }
         
         cargarDesdeLocalStorage();
-        document.addEventListener("DOMContentLoaded", function() {
-            document.getElementById("calcular").addEventListener("click", function() {
-                calcularCostos();
-            });
+        document.getElementById("calcular").addEventListener("click", function() {
+            calcularCostos();
         });
         calcularCostos();
