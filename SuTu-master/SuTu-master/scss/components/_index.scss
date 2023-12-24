@@ -1,0 +1,223 @@
+main{
+    .texto-recomendacion{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            font-size: 50px;
+            .SuTu-palabra-recomendacion{
+                font-size: 70px;
+                .morado-sutu{
+                    color: rgb(100, 41, 212);
+                }
+            }
+        }
+    }
+    .whatsapp{
+        a{
+            img{
+                position: fixed;
+                top: 800px;
+                right: 38px;
+                width: 100x;
+                height: 100px;
+            }
+        }
+    }
+    .separador{
+        width: 100%;
+        height: 15px;
+        background-color:rgb(34, 34, 34);
+    }
+    .contenedor-corsair{
+        height: 72vh;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        background-image: url(../img/linea-corsair1.png);
+        flex-direction: column;
+        background-size: cover;
+        .texto-corsair-1{
+            margin-top: 40px;
+            margin: 0;
+            font-size: 70px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            .texto-corsair-span{
+                text-decoration:underline;
+                color: rgb(236, 232, 26);
+                
+            }
+        }
+        .texto-corsair-2{
+            margin: 0;
+            font-size: 40px;
+            font-weight: bold;
+            color: rgb(238, 238, 238);
+            
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+    .contenedor-razer{
+        height: 72vh;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        background-image: url(../img/linea-razer.webp);
+        flex-direction: column;
+        background-size: cover;
+        .texto-razer-1{
+            margin-top: 40px;
+            margin: 0;
+            font-size: 70px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            .texto-razer-span{
+                text-decoration:underline;
+                color: rgb(68, 214, 44);
+                
+            }
+        }
+        .texto-razer-2{
+            margin: 0;
+            font-size: 40px;
+            font-weight: bold;
+            color: rgb(238, 238, 238);
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+    .contenedor-logitech{
+        height: 72vh;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        background-image: url(../img/linea-logitech.png);
+        flex-direction: column;
+        background-size: cover;
+        .texto-logitech-1{
+            margin-top: 40px;
+            margin: 0;
+            font-size: 70px;
+            font-weight: bold;
+            color: rgb(34, 34, 34);
+            .texto-logitech-span{
+                text-decoration:underline;
+                color: rgb(0, 184, 252);
+                
+            }
+        }
+        .texto-logitech-2{
+            margin: 0;
+            font-size: 40px;
+            font-weight: bold;
+            color: rgb(34, 34, 34);
+            
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+    #destacados-grid{
+        width: auto;
+        height: auto;
+        .texto-desctacado-grid{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            color: rgb(255, 255, 255);
+            h3{
+                font-size: 50px;
+                color: rgb(255, 255, 255);
+                text-decoration: underline rgb(100, 41, 212);
+            }
+            img{
+                width: 200px;
+                height: auto;
+            }
+        }
+        .destacados-grid-container{
+            display: grid;
+            width: auto;
+            margin: 20px;
+            grid-template-columns:49% 49%;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: 
+            "crua-fhd sony-inzone"
+            "msi-katana ryzen7"
+            "msi-mpg samsung-sr35"
+            ;
+            grid-row-gap: 20px; 
+            img{
+                width: 720px;
+                height: auto;
+            }
+            p{
+                font-size: 30px;
+                color: rgb(255, 255, 255);
+                .span-underline-oferta{
+                    text-decoration: underline red;
+                }
+                .span-oferta{
+                    text-decoration:line-through;
+                    color: rgb(187, 187, 187);
+                }
+            }
+            .destacados-item-1{
+                grid-area: crua-fhd;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            .destacados-item-2{
+                grid-area: sony-inzone;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            .destacados-item-3{
+                grid-area: msi-katana;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            .destacados-item-4{
+                grid-area: ryzen7;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            .destacados-item-5{
+                grid-area: msi-mpg;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            .destacados-item-6{
+                grid-area: samsung-sr35;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+        }
+    }
+}

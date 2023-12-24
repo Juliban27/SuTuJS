@@ -1,6 +1,6 @@
-body{
-    background-image: url(../img/supra.jpg);
-    background-size: cover;
+*{
+    list-style: none;
+
 }
 
 
@@ -23,6 +23,23 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #0056b3;
+.boton-lista{
+    
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #5f6c7a;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.boton-lista:hover{
+    padding-left: 5px;
+}
+
+.lista ul li div h3{
+    color: #000000;
+    list-style: none;
 }

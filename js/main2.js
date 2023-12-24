@@ -289,3 +289,52 @@ function calcularCostos() {
             calcularCostos();
         });
         calcularCostos();
+
+function eleccionPersona() {
+    document.addEventListener("DOMContentLoaded", function () {
+        var buttons = document.getElementsByClassName("boton-lista");
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener("click", function (event) {
+                var buttonId = event.target.id;
+                alert("Boton " + buttonId + " fue clickeado.");
+                switch (buttonId) {
+                    case "lista-boton1":
+                        let creacionLista = document.getElementById("lista-js");
+                        creacionLista.innerHTML = "<ul><li><h3>AMD Ryzen 7 7800X3D $1901043 <button class='boton-lista1' id='lista-boton1a'>Ver Lista</button></h3></li> <li><h3>Intel Core i9-13900KS $3080741<button class='boton-lista1' id='lista-boton1b'>Ver Lista</button></h3></li></ul>";
+                        break;
+                    case "lista-boton2":
+                        let creacionLista2 = document.getElementById("lista-js");
+                        creacionLista2.innerHTML = "<ul><li><h3>AMD Ryzen 7 7800X3D $1901043 <button class='boton-lista1' id='lista-boton1a'>Ver Lista</button></h3></li></ul>";
+                        break;
+                    case "lista-boton3":
+                        // Action for Discos Duros button
+                        break;
+                    case "lista-boton4":
+                        // Action for Discos Duros button
+                        break;
+                    case "lista-boton5":
+                        // Action for Discos Duros button
+                        break;
+                    case "lista-boton6":
+                        // Action for Discos Duros button
+                        break;
+                    case "lista-boton7":
+                        // Action for Discos Duros button
+                        break;
+                    case "lista-boton8":
+                        // Action for Discos Duros button
+                        break;
+                    case "lista-boton9":
+                        // Action for Discos Duros button
+                        break;
+                    case "lista-boton10":
+                        // Action for Discos Duros button
+                        break;
+                    default:
+                        console.log("No valid button ID.");
+                }
+            });
+        }
+    });
+    }
+    

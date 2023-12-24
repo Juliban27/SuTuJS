@@ -1,0 +1,471 @@
+.body-catalogo-grid-container{
+    display: grid;
+    width: 100%;
+    grid-template-columns:30% 70%;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "evangelion-info evangelion-carousel"
+    "aside-catalogo main-catalogog"
+    ;
+    height: auto;
+    background-color: rgb(4, 4, 4);
+    .asusrog-evangelion-aside{
+        grid-area: evangelion-info;
+        display: flex;
+        margin-left:10px;
+        margin-right: 10px;
+        flex-direction: column;
+        justify-content: center;
+        h2{
+            border-bottom: 2px solid rgb(90, 50, 163);
+            font-size: 50px;
+            font-weight: bold;
+            background-image: linear-gradient(to left,
+            rgb(90, 50, 163),
+            rgb(93, 57, 158),
+            rgb(101, 67, 165),
+            rgb(111, 78, 173),
+            rgb(114, 78, 180),
+            rgb(142, 108, 202),
+            rgb(196, 101, 118),
+            rgb(201, 82, 103 ),
+            rgb(203, 28, 59),
+            rgb(203, 28, 59),
+            rgb(203, 28, 59),
+            rgb(203, 28, 59),
+            rgb(203, 28, 59),
+            rgb(203, 28, 59),
+            rgb(203, 28, 59),
+            rgb(201, 82, 103 ),
+            rgb(196, 101, 118),
+            rgb(142, 108, 202),
+            rgb(114, 78, 180),
+            rgb(111, 78, 173),
+            rgb(101, 67, 165),
+            rgb(93, 57, 158));
+            animation: sliding 2000s linear infinite;
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p{
+            color: rgb(255, 255, 255);
+            text-justify: distribute;
+        }
+    }
+    .main-carousel-evangelion{
+        grid-area: evangelion-carousel;
+    }
+
+
+
+
+
+    .main-catalogo{
+        margin-top: 20px;
+        width: 100%;
+        grid-row-gap: 20px;
+        -ms-grid-row-align: center;
+        -ms-grid-column-align: center;
+        grid-template-columns:33% 33% 33%;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        "nzxt samsung msi"
+        "amd intel nvidia"
+        "hyperx1 razer1 logitech1"
+        "asus corsair1 nzxtpsu"
+        ;
+        display: grid;
+        background-color: rgb(4, 4, 4);
+        grid-area: main-catalogog;
+        div{
+            display: flex;
+            height: auto;
+            width: 302px;
+            align-items: baseline;
+            justify-self: center;
+            flex-direction: column;
+            img{
+                height: 300px;
+                width: 300px;
+            }
+        }
+        .grid-item-catalogo-nzxt{
+            grid-area: nzxt;
+            -webkit-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            -moz-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            .descripcion-grid-catalogo{
+                font-weight: bold;
+                background-color: rgb(34, 34, 34);
+                color: rgb(255, 255, 255);
+                height: auto;
+                width: auto;
+                transition: all 0.3s ease;
+                a{
+                    color: rgb(100, 41, 212);
+                    transition: all 0.3s ease;
+                    text-decoration: none;
+                    &:hover{
+                        color: rgb(77, 31, 163);
+                    }
+                    svg{
+                        height: 20px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+        .grid-item-catalogo-samsung{
+            grid-area: samsung;
+            -webkit-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            -moz-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            .descripcion-grid-catalogo{
+                font-weight: bold;
+                background-color: rgb(34, 34, 34);
+                color: rgb(255, 255, 255);
+                height: auto;
+                width: auto;
+                transition: all 0.3s ease;
+                a{
+                    color: rgb(100, 41, 212);
+                    transition: all 0.3s ease;
+                    text-decoration: none;
+                    &:hover{
+                        color: rgb(77, 31, 163);
+                    }
+                    svg{
+                        height: 20px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+        .grid-item-catalogo-msi{
+            grid-area: msi;
+            -webkit-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            -moz-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            .descripcion-grid-catalogo{
+                font-weight: bold;
+                background-color: rgb(34, 34, 34);
+                color: rgb(255, 255, 255);
+                height: auto;
+                width: auto;
+                transition: all 0.3s ease;
+                a{
+                    color: rgb(100, 41, 212);
+                    transition: all 0.3s ease;
+                    text-decoration: none;
+                    &:hover{
+                        color: rgb(77, 31, 163);
+                    }
+                    svg{
+                        height: 20px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+
+        .grid-item-catalogo-amd{
+            grid-area: amd;
+            -webkit-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            -moz-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            .descripcion-grid-catalogo{
+                font-weight: bold;
+                background-color: rgb(34, 34, 34);
+                color: rgb(255, 255, 255);
+                height: auto;
+                width: auto;
+                transition: all 0.3s ease;
+                a{
+                    color: rgb(100, 41, 212);
+                    transition: all 0.3s ease;
+                    text-decoration: none;
+                    &:hover{
+                        color: rgb(77, 31, 163);
+                    }
+                    svg{
+                        height: 20px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+        .grid-item-catalogo-intel{
+            grid-area: intel;
+            -webkit-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            -moz-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            .descripcion-grid-catalogo{
+                font-weight: bold;
+                background-color: rgb(34, 34, 34);
+                color: rgb(255, 255, 255);
+                height: auto;
+                width: auto;
+                transition: all 0.3s ease;
+                a{
+                    color: rgb(100, 41, 212);
+                    transition: all 0.3s ease;
+                    text-decoration: none;
+                    &:hover{
+                        color: rgb(77, 31, 163);
+                    }
+                    svg{
+                        height: 20px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+        .grid-item-catalogo-nvidia{
+            grid-area: nvidia;
+            -webkit-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            -moz-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            .descripcion-grid-catalogo{
+                font-weight: bold;
+                background-color: rgb(34, 34, 34);
+                color: rgb(255, 255, 255);
+                height: auto;
+                width: auto;
+                transition: all 0.3s ease;
+                a{
+                    color: rgb(100, 41, 212);
+                    transition: all 0.3s ease;
+                    text-decoration: none;
+                    &:hover{
+                        color: rgb(77, 31, 163);
+                    }
+                    svg{
+                        height: 20px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+        .grid-item-catalogo-hyperx{
+            grid-area: hyperx1;
+            -webkit-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            -moz-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            .descripcion-grid-catalogo{
+                font-weight: bold;
+                background-color: rgb(34, 34, 34);
+                color: rgb(255, 255, 255);
+                height: auto;
+                width: auto;
+                transition: all 0.3s ease;
+                a{
+                    color: rgb(100, 41, 212);
+                    transition: all 0.3s ease;
+                    text-decoration: none;
+                    &:hover{
+                        color: rgb(77, 31, 163);
+                    }
+                    svg{
+                        height: 20px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+        .grid-item-catalogo-razer{
+            grid-area: razer1;
+            -webkit-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            -moz-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            .descripcion-grid-catalogo{
+                font-weight: bold;
+                background-color: rgb(34, 34, 34);
+                color: rgb(255, 255, 255);
+                height: auto;
+                width: auto;
+                transition: all 0.3s ease;
+                a{
+                    color: rgb(100, 41, 212);
+                    transition: all 0.3s ease;
+                    text-decoration: none;
+                    &:hover{
+                        color: rgb(77, 31, 163);
+                    }
+                    svg{
+                        height: 20px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+        .grid-item-catalogo-logitech{
+            grid-area: logitech1;
+            -webkit-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            -moz-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            .descripcion-grid-catalogo{
+                font-weight: bold;
+                background-color: rgb(34, 34, 34);
+                color: rgb(255, 255, 255);
+                height: auto;
+                width: auto;
+                transition: all 0.3s ease;
+                a{
+                    color: rgb(100, 41, 212);
+                    transition: all 0.3s ease;
+                    text-decoration: none;
+                    &:hover{
+                        color: rgb(77, 31, 163);
+                    }
+                    svg{
+                        height: 20px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+        .grid-item-catalogo-asus{
+            grid-area: asus;
+            -webkit-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            -moz-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            .descripcion-grid-catalogo{
+                font-weight: bold;
+                background-color: rgb(34, 34, 34);
+                color: rgb(255, 255, 255);
+                height: auto;
+                width: auto;
+                transition: all 0.3s ease;
+                a{
+                    color: rgb(100, 41, 212);
+                    transition: all 0.3s ease;
+                    text-decoration: none;
+                    &:hover{
+                        color: rgb(77, 31, 163);
+                    }
+                    svg{
+                        height: 20px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+        .grid-item-catalogo-corsair{
+            -webkit-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            -moz-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            .descripcion-grid-catalogo{
+                font-weight: bold;
+                background-color: rgb(34, 34, 34);
+                color: rgb(255, 255, 255);
+                height: auto;
+                width: auto;
+                transition: all 0.3s ease;
+                a{
+                    color: rgb(100, 41, 212);
+                    transition: all 0.3s ease;
+                    text-decoration: none;
+                    &:hover{
+                        color: rgb(77, 31, 163);
+                    }
+                    svg{
+                        height: 20px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+        .grid-item-catalogo-nzxtpsu{
+            grid-area: nzxtpsu;
+            -webkit-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            -moz-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+            .descripcion-grid-catalogo{
+                font-weight: bold;
+                background-color: rgb(34, 34, 34);
+                color: rgb(255, 255, 255);
+                height: auto;
+                width: auto;
+                transition: all 0.3s ease;
+                a{
+                    color: rgb(100, 41, 212);
+                    transition: all 0.3s ease;
+                    text-decoration: none;
+                    &:hover{
+                        color: rgb(77, 31, 163);
+                    }
+                    svg{
+                        height: 20px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+    .aside{
+        grid-area: aside-catalogo;
+        background-color: rgb(34, 34, 34);
+        .aside-menu-form{
+            grid-area: aside-catalogo;
+            list-style: none;
+            .barra-separacion-caracteristicas1{
+                width: 100%;
+                height: 2px;
+                background-color: rgb(136, 136, 136);
+            }
+            ul{
+                .aside-caracteristicas{
+                    p{
+                        .boton-aside{
+                            border: 0;
+                            overflow: visible;
+                            padding: 0;
+                            font-size: 21.69px;
+                            line-height: normal;
+                            background: none;
+                            border: 0;
+                            color: rgb(255, 255, 255);
+                            -user-select: none;
+                            -appearance: button;
+                            -user-select: none;
+                            -user-select: none;
+                            transition: all 0.3s ease;
+                            &:hover{
+                                padding-left: 5px;
+                            }
+                            .flecha-aside{
+                                display: inline-block;
+                                color: rgb(100, 41, 212);
+                                transition: all 0.3s ease;
+                                &:hover{
+                                    color: rgb(100, 41, 212);
+                                    transform: rotate(90deg) !important ; 
+                                }
+                            }
+                        }
+                    }
+                    div{
+                        form{
+                            label{
+                                color: rgb(136, 136, 136);
+                                transition: all 0.3s ease;
+                                &:hover{
+                                    color: rgb(255, 255, 255);
+                                    padding-left: 3px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .barra-separacion-caracteristicas{
+                    width: 70%;
+                    height: 2px;
+                    background-color: rgb(136, 136, 136);
+                }
+            }
+        }
+    }
+
+
+}
