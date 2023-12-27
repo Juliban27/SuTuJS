@@ -290,7 +290,7 @@ function calcularCostos() {
         });
         calcularCostos();
 
-function eleccionPersona() {
+/*function eleccionPersona() {
     document.addEventListener("DOMContentLoaded", function () {
         var buttons = document.getElementsByClassName("boton-lista");
         for (var i = 0; i < buttons.length; i++) {
@@ -336,5 +336,5 @@ function eleccionPersona() {
             });
         }
     });
-    }
+    }*/
     
