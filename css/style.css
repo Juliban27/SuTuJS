@@ -136,3 +136,8 @@
     color: #000000;
     list-style: none;
 }
+
+.personajes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

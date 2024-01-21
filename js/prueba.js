@@ -1,6 +1,34 @@
 
+
 let ids = [];
 
+
+
+function getCharacter(done){
+    const results = fetch("https://rickandmortyapi.com/api/character")
+
+    results
+    .then(response => response.json())
+    .then(data => {
+        done(data)
+        });
+
+}
+
+getCharacter(data => {
+        data.results.forEach(personaje => {
+        const article = document.createRange().createContextualFragment(/*html*/ 
+        `<article>
+        <div class="image-container"> 
+        <img src="${personaje.image}" alt="personaje">
+        </div>
+        <h2>${personaje.name}</h2>
+        <span>${personaje.status}</span>
+        </article>`);
+        const hola = document.getElementById("personajes");
+        hola.append(article);
+    })
+})
 
 const productos = {
     CPUs: [
@@ -103,7 +131,6 @@ function tostadas2(nombreCategoria1){
 
 document.addEventListener('DOMContentLoaded', function () {
 function obtenerIds1() {
-//Se obtienen los ids a traves de un queryselector buscando los elementos en el html con una etiqueta "boton-lista" se genera una iteración en la variable elementos, luego creamos un condicional que revise si el elemento iterado tiene un id lo envíe al array ids.
     let elementos = document.querySelectorAll('.boton-lista');
 
 
@@ -121,9 +148,7 @@ function obtenerIds1() {
 
 
 function locura(){
-// la función lo que hace es crear un bucle el cual itere sobre el array ids, este for crea una variable llamada i y se va sumando 1 a si misma cada vez que el bucle se ejecuta, esto hace que el bucle se ejecute hasta que la i sea mayor que la cantidad de elementos en ids.
 
-// Lo que se ejecuta dentro del bucle es 2 condicionales, la primera verifica si hay algun boton presionado, la segunda con el switch ejecuta un inner html el cual cada vez que se presiona un boton especifico crea la lista de los objetos que hay en la pagina.
     for (let i = 0; i < ids.length; i++) {
         let botonSeleccionado = document.getElementById(ids[i]);
 
@@ -198,7 +223,6 @@ function locura(){
 
 
 function locura1() {
-//
 
 
     document.getElementById("lista-js").addEventListener('click', function (event) {
@@ -331,11 +355,15 @@ function actualizarCostoTotal() {
     document.getElementById("totalTabla").textContent = "$" + costo_total;
 }
 
+
+
 let verids = obtenerIds1();
 locura();
 locura1();
 limpiar();
 console.log("IDs encontrados:", verids);
+
+
 
 function limpiarCarrito(){
     for (const categoria in eleccionUsuario) {
@@ -385,6 +413,8 @@ function limpiar(){
     });
 });
 }
+
+
 
 
 
